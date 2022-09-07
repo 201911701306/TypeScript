@@ -1,0 +1,47 @@
+{
+    /*
+        ts 的【配置文件，ts编译器可以根据它的信息来对代码进行编译
+    */
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        //默认值["node_modules","bower_components","jspm_packages"]
+        "./src/hello/**/*"
+    ],
+    "compilerOptions": {
+        "target": "ES6",
+        //指定我们要使用的模块化规范
+        "module": "System",
+        "lib": [
+            "DOM",
+            "ES2015"
+        ],
+        //输出文件所在目录
+        "outDir": "./dist",
+        //将代码合并为一个文件
+        //设置outFile后，所有
+        "outFile": "./dist/app.js",
+        //是否允许有js文件
+        "allowJs": true,
+        //检查js，语法检查
+        "checkJs": true,
+        //是否移除注释
+        "removeComments": true,
+        //不生成编译后的文件
+        //只想检查语法时，不想编译时
+        // "noEmit": true,
+        //当有错误时不生产编译文件
+        "noEmitOnError": true,
+        //用来设置编译文件是否开启严格模式
+        "alwaysStrict": true,
+        //不允许隐式any类型
+        "noImplicitAny": true,
+        //不允许不明确类型的this
+        "noImplicitThis": true,
+        //严格检查空值
+        "strictNullChecks": true,
+        //所有严格检查的总开关
+        "strict": true
+    }
+}

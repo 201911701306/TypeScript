@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        //指定我们要使用的模块化规范
+        "module": "ES6",
+        "strict": false,
+    }
+}
