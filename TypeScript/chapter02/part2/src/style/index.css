@@ -6,7 +6,7 @@
 body {
   font: bold 20px "Courier";
 }
-.main {
+#main {
   width: 360px;
   height: 420px;
   background-color: #bfa;
@@ -18,20 +18,20 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.main .stage {
+#main #stage {
   width: 304px;
   height: 304px;
   border: 2px solid black;
   position: relative;
 }
-.main .stage #snake > div {
+#main #stage #snake > div {
   width: 10px;
   height: 10px;
   background-color: #000;
   border: 1 solid #bfa;
   position: absolute;
 }
-.main .stage > #food {
+#main #stage > #food {
   width: 10px;
   height: 10px;
   position: absolute;
@@ -42,14 +42,14 @@ body {
   justify-content: space-between;
   align-content: space-between;
 }
-.main .stage > #food > div {
+#main #stage > #food > div {
   width: 4px;
   height: 4px;
   background-color: #000;
   border: 1 solid #bfa;
   transform: rotate(45deg);
 }
-.main .score-panel {
+#main #score-panel {
   width: 300px;
   display: flex;
   justify-content: space-between;
